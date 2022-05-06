@@ -1,0 +1,24 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "This application helps user take and record notes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Rajeswari Marimuthu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-rajeswarivmarimuthu:rajeswarivmarimuthu/notes-taker.git"
+  },
+  "keywords": [
+    "notes-taker",
+    "node.js",
+    "express.js"
+  ]
+}
