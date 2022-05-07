@@ -1,15 +1,15 @@
+// Importing the required packages 
 const express = require('express');
 const notes = require('express').Router();
 const path = require('path');
 const fs = require('fs');
 const uuid = require('../helper/uuid');
 
-
-
-// GET Route for retrieving all the notes
+//Setting up the express middleware
 notes.use(express.json());
 notes.use(express.urlencoded({ extended: true }));
 
+// GET Route for retrieving all the notes
 notes.get('/', (req, res) => {
   fs.readFile("./db/db.json", 'utf8', (err, data) => {
     if (err) {
@@ -21,12 +21,13 @@ notes.get('/', (req, res) => {
   });
   });
 
-  //post route for save the notes 
+  //POST route for save the notes 
   notes.post('/',(req,res) => {
-    console.log(req.body);
-      // Destructuring assignment for the items in req.body
+
+  // Destructuring assignment for the items in req.body
   const { title, text } = req.body;
 
+  //If both title and text are present, then process the data and upload to DB
   if (title && text) {
     // Variable for the object we will save
     const newNotes = {
@@ -35,6 +36,7 @@ notes.get('/', (req, res) => {
       id:uuid()
     };
 
+    //Get the data from the database file
     fs.readFile("./db/db.json", 'utf8', (err, data) => {
       if (err) {
         console.error('are we erroring out' + err);
@@ -64,6 +66,7 @@ notes.get('/', (req, res) => {
   }
   });
 
+  // DELETE route to delete the notes by id
   notes.delete("/:id",(req,res) => {
     console.log('In deleteroute')
     let notesID = req.params.id;

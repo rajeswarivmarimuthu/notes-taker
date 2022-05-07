@@ -1,27 +1,27 @@
 [
     {
-        "title": "Second",
-        "text": "second",
+        "title": "Recipe for Tea",
+        "text": "Boil water with tea leaves. Add milk and sugar. Strain it to have good tea!!",
         "id": "781f"
     },
     {
-        "title": "Four",
-        "text": "Four ",
+        "title": "Deploy to Heroku",
+        "text": "Expect SSH issue, to address it update the SSH config to add heroku.com host name with PORT 22 ",
         "id": "681g"
     },
     {
-        "title": "Five",
-        "text": "Five",
+        "title": "Ways to be Happy",
+        "text": "Being Happy lies in your head. Everything has 2 perpectives positive and not-so positive. Focus on positive.",
         "id": "681f"
     },
     {
-        "title": "Seventh Notes",
-        "text": "Seven",
+        "title": "Stay Healthy",
+        "text": "Early to bed and Early to Rise!!",
         "id": "3763"
     },
     {
-        "title": "Push the code to Heroku",
-        "text": "Read the documentation and push the code to Heroku",
-        "id": "7990"
+        "title": "Good Movies to Watch",
+        "text": "Lord of the Rings\nHarry Potter \nChronicles of Narnia \nInside Outside",
+        "id": "fe28"
     }
 ]
