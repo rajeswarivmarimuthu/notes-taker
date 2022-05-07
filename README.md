@@ -12,7 +12,7 @@ Notes taker is a web application to create, save and delete notes. This full sta
 Licensed under the MIT license!
 
 # Application Details 
-GH Repo @ https://github.com/rajeswarivmarimuthu/notes-taker
+GH Repo @ https://github.com/rajeswarivmarimuthu/notes-taker <br>
 Application Deployed @ https://notes-recorder.herokuapp.com/notes 
 
 
